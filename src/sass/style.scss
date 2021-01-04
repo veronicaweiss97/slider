@@ -1,0 +1,79 @@
+@import 'snow';
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    &__header {
+        position: absolute;
+        width: 474px;
+        height: 122px;
+        left: 11px;
+        top: 11px;
+        background: rgba(255, 255, 255, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .title {
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            letter-spacing: 0.09em;
+            color: #000000;
+            font-weight: 200;
+            font-style: italic;
+        }
+    }
+    .slide {
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100vh;
+        }
+    }
+    &__subheader {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom:0;
+        right: 0;
+        &-arrows {
+            display: flex;
+            .box {
+                margin-left: 11px;
+                margin-bottom: 11px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 100px;
+                background: rgba(255, 255, 255, 0.5);
+            }
+        }
+        &-subtitle {
+            width: 661px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.5);
+            margin-bottom: 11px;
+            margin-right: 11px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .subtitle {
+                font-weight: 200;
+                font-size: 36px;
+                line-height: 42px;
+                text-align: center;
+                letter-spacing: 0.09em;
+                color: #000000;
+            }
+        }
+    }
+
+}
